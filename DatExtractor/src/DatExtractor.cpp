@@ -24,8 +24,13 @@ int main(int argc, char** argv)
 {
     try {
 
-        const auto inputFileName = R"(C:\HomBot\Firmware Update\update.dat)";
-        const auto outputDir = std::experimental::filesystem::path(R"(C:\HomBot\filesys\)");
+        if(argc != 3) {
+            std::cout << "Usage: " << argv[0] << " input.dat outputdir" << std::endl;
+            return 1;
+        }
+
+        const auto inputFileName = argv[1];
+        const auto outputDir = std::experimental::filesystem::path(argv[2]);
 
         auto infile = std::ifstream(inputFileName, std::ifstream::in | std::ifstream::binary);
 
