@@ -2,7 +2,9 @@
 Contains tools to explore and pimp Lg Home Bot (vacuum cleaner)
 
 All the tools provided have been developed for the vacuum cleaner Lg64703. 
-All observations and changes are based upon version 13865 of the Hom-Bot's firmware.
+All observations and changes are based upon version 13865 and 16552 of the Hom-Bot's firmware.
+
+A detailed explanation can be found [here](https://pocketbroadcast.github.io/blog/2016/09/13/SSH-the-LG-HomBot-VR64703).
 
 
 DatExtractor:
